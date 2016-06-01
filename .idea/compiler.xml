@@ -22,10 +22,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="standard" />
         <module name="vieclam" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="standard" target="1.8" />
       <module name="vieclam" target="1.8" />
     </bytecodeTargetLevel>
   </component>

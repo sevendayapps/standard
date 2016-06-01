@@ -4,22 +4,22 @@
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
-    <display-name>ViecLam</display-name>
+    <display-name>standard</display-name>
 
     <servlet>
-        <servlet-name>vieclam</servlet-name>
+        <servlet-name>standard</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>vieclam</servlet-name>
+        <servlet-name>standard</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>/WEB-INF/vieclam-servlet.xml</param-value>
+        <param-value>/WEB-INF/standard-servlet.xml</param-value>
     </context-param>
 
     <listener>
