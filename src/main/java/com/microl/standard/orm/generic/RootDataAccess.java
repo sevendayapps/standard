@@ -42,10 +42,4 @@ public abstract class RootDataAccess<T extends RootEntity>
     public void setEntityName(String entityName) {
         this.entityName = entityName;
     }
-
-    abstract Object getSession();
-
-    abstract void flushSession();
-
-    abstract void closeSession();
 }

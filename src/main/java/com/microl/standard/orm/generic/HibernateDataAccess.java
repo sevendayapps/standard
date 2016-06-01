@@ -27,18 +27,15 @@ public class HibernateDataAccess<T extends RootEntity> extends RootDataAccess<T>
         super(persistentClass);
     }
 
-    @Override
-    Session getSession() {
+    public Session getSession() {
         return sessionFactory.getCurrentSession();
     }
 
-    @Override
-    void flushSession() {
+    public void flushSession() {
         getSession().flush();
     }
 
-    @Override
-    void closeSession() {
+    public void closeSession() {
         getSession().close();
     }
 
