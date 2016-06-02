@@ -11,7 +11,6 @@ import java.util.Map;
  * Created by vietlk on 01/06/2016.
  */
 
-@SuppressWarnings({ "unchecked", "unused", "rawtypes" })
 public interface DataAccess<T extends RootEntity> {
     T get(long id);
     T load(long id);
